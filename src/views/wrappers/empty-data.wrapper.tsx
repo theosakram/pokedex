@@ -12,11 +12,33 @@ export const EmptyDataWrapper: FC<EmptyDataWrapperProps> = ({
     watchedValue,
 }) => {
     if (Array.isArray(watchedValue) && !watchedValue.length) {
-        return <h1>{fallbackText}</h1>;
+        return (
+            <main
+                style={{
+                    width: "100%",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    transform: "translate(0, 300%)",
+                }}>
+                <h1 style={{ color: "white" }}>{fallbackText}</h1>;
+            </main>
+        );
     }
 
     if (!Object.keys(watchedValue).length) {
-        return <h1>{fallbackText}</h1>;
+        return (
+            <main
+                style={{
+                    width: "100%",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    transform: "translate(0, 300%)",
+                }}>
+                <h1 style={{ color: "white" }}>{fallbackText}</h1>;
+            </main>
+        );
     }
 
     return children;
