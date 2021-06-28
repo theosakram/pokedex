@@ -1,5 +1,17 @@
 # Pukicho Pokedex
 
+## link
+
+```bash
+https://pukicho-pokedex.web.app/
+```
+
+## install
+
+```bash
+yarn
+```
+
 ## start
 
 ```bash
