@@ -30,9 +30,11 @@ export const PokemonDetailForm: FC<PokemonDetailFormContainer> = ({ name, artwor
     };
 
     return (
-        <Form onSubmit={addPokeToCollection}>
-            <label htmlFor="nickname">Name your newly catched pokemon!</label>
-            <input placeholder="Insert Nickname" type="text" name="nickname" />
+        <Form id="form-pokemon" onSubmit={addPokeToCollection}>
+            <label id="label-nickname" htmlFor="nickname">
+                Name your newly catched pokemon!
+            </label>
+            <input id="input-nickname" placeholder="Insert Nickname" type="text" name="nickname" />
             <button type="submit">Finish</button>
         </Form>
     );

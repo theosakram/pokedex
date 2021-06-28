@@ -56,3 +56,5 @@ declare interface ResponsiveContextInterface {
     isSmallLaptop: boolean;
     isWideScreen: boolean;
 }
+
+declare module "react-convert-image";
